@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0f5c8d7587.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .socialmedia-container{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgb(0, 0, 0);
+    }
+    .connect{
+        color: rgb(215, 215, 215);
+        letter-spacing: 1.5px;
+        font-size: larger;
+    }
+    .media-links ul{
+        position: relative;
+        display: flex;
+        margin: 30px 0 0 0;
+        cursor: pointer;
+    }
+    .media-links ul li{
+        list-style: none;
+        position: relative; 
+        margin: 0 30px;
+        padding: 4px;
+    }
+    .media-links ul li a .fa-brands, .fa-regular{
+        font-size: 5rem;
+        color: grey;
+        margin-bottom: 8px;
+        display: inline-block; 
+    }
+    .media-links ul li::before{
+        font-family: fontAwesome;
+        content: '\00a';
+        position: absolute;
+        top: 0;
+        left: 0; 
+        font-size: 5rem;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s ease-in-out;
+        margin-bottom: 8px; /* Adjusted margin for better spacing */
+    }
+    .media-links ul li:nth-child(1)::before{
+        content: '\f09a'; /* Font Awesome Icon */
+        color: #316FF6;
+        border-bottom: 4px solid #316FF6;
+    }
+    .media-links ul li:nth-child(2)::before{
+        content: '\f232';
+        color: #05ff69;
+        border-bottom: 4px solid #05ff69;
+    }
+    .media-links ul li:nth-child(3)::before{
+        content: '\f16d';
+        background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); 
+        -webkit-background-clip: text;
+        color: transparent;
+        border-bottom: 4px solid #c837ab;
+    }
+    .media-links ul li:nth-child(4)::before{
+        content: '\f0e1';
+        
+        border-bottom: 4px solid #0077B5;
+    }
+    .media-links ul li:nth-child(5)::before{
+        content: '\f0e0';
+        color: rgb(255, 77, 0);
+        border-bottom: 4px solid rgb(255, 77, 0);
+    }
+    .media-links ul li:nth-child(6)::before{
+        content: '\e61b';
+        color: white;
+        border-bottom: 4px solid white;
+    }
+
+    .media-links ul li:hover::before{
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="socialmedia-container">
+        <div class="connect">
+            <h1>Connect With Us</h1>
+        </div>
+        <div class="media-links">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
